@@ -39,34 +39,28 @@ int main() {
     // Add a node to our linked list using our four steps
     // Create a new node
     pNew = new node();
+    // Fill the data field
     pNew -> data = myStr(1);
     pNew -> next = nullptr;
+    // Attach new node to head of list
+    pNew -> next = pHead;
+    // Reposition 
 
     // output our linked list
     cout << "\n output of the node that pNew is pointing to\n";
 
+    // create a pointer that goes through the list
+    node* pCurrent;
 
 
-
-    cout << "\n value of my string object is: " << myStr << endl;
-    cout << "length of myStr is: " << myStr.length() << endl;
-    int lengthOFmyStr = 0;
-    lengthOFmyStr = myStr.length();
-    cout << "\n The length of myStr is: " << lengthOFmyStr << endl;
-
-    char myTempchar;
-    for (int i=0; i<lengthOFmyStr/2; i++) {
-        myTempchar = myStr[i];
-        myStr[i] = myStr[lengthOFmyStr-i-1];
-        myStr[lengthOFmyStr-i-1] = myTempchar;
+    pCurrent = pHead
+     cout << "\n The current linked list: \n"; 
+     cout << pHead -> data << endl;
+     cout << pHead -> next -> date << endl;
+     
+    
 
 
-
-
-    }
-
-cout << "\n reverse string is: " << myStr << endl;
-    cout << "\n myStr is: " << myStr << endl;
 
 system ("pause>0");
     return 0;
